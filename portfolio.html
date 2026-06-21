@@ -1,58 +1,90 @@
 
-  <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Rynu Reji Portfolio</title>
 
     <style>
+
         body{
             margin:0;
-            font-family: Arial, sans-serif;
-            background-color:#f4f4f4;
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+            color:#222;
         }
 
         header{
-            background-color:#222;
+            background:#222;
             color:white;
             text-align:center;
             padding:50px 20px;
         }
 
         header img{
-            width:200px;
-            height:200px;
+            width:180px;
+            height:180px;
             border-radius:50%;
             margin-top:15px;
         }
 
-        section{
-            background:white;
-            margin:20px;
+        .container{
+            max-width:1000px;
+            margin:auto;
             padding:20px;
+        }
+
+        section{
+            margin:60px 0;
+        }
+
+        h2{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:20px;
+            line-height:1.6;
+        }
+
+        .skills{
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+        }
+
+        .skill{
+            background:white;
+            padding:15px 25px;
             border-radius:10px;
-            text-align:center;
+            border:1px solid #ddd;
         }
 
-        ol{
-            display:inline-block;
-            text-align:left;
+        .projects{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
         }
 
-        form{
-            display:inline-block;
-            text-align:left;
+        .project{
+            flex:1;
+            min-width:300px;
+            background:white;
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:25px;
         }
 
-        input{
-            padding:8px;
-            width:250px;
+        .project h3{
+            margin-top:0;
         }
 
-        input[type="submit"]{
-            width:auto;
-            cursor:pointer;
+        .contact{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            border:1px solid #ddd;
         }
 
         footer{
@@ -61,69 +93,134 @@
             text-align:center;
             padding:15px;
         }
+
+        @media(max-width:768px){
+
+            h2{
+                font-size:30px;
+            }
+
+            p{
+                font-size:18px;
+            }
+
+            .projects{
+                flex-direction:column;
+            }
+        }
+
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Rynu Reji</h1>
+<header>
 
-         <p>BCA Graduate currently pursuing MCA, passionate about Web Development, Programming, and Building Innovative Digital Solutions.</p>
+    <h1>Rynu Reji</h1>
 
-        <img src="my portfolio.jpeg" alt="Rynu Reji">
-    </header>
+    <p>
+        BCA Graduate currently pursuing MCA, passionate about
+        Web Development, Programming, and Building Innovative Digital Solutions.
+    </p>
+
+    <img src="my portfolio.jpeg" alt="Rynu Reji">
+
+</header>
+
+<div class="container">
 
     <section>
-        <h2>About Me</h2>
+
+        <h2>About</h2>
 
         <p>
-              
-    Hello! I'm Rynu Reji, a BCA graduate currently pursuing
-    an MCA. I am passionate about web development and software
-    technologies. I enjoy creating websites and learning new
-    programming skills.
-</p>
-        
+            Hello! I'm Rynu Reji, a BCA graduate currently pursuing
+            MCA. I am passionate about web development and software
+            technologies. I enjoy creating websites, learning new
+            programming skills, and building innovative digital solutions.
+        </p>
+
     </section>
 
     <section>
+
         <h2>Skills</h2>
 
-        <ol>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Python Basics</li>
-        </ol>
+        <div class="skills">
+
+            <div class="skill">HTML5</div>
+
+            <div class="skill">CSS3</div>
+
+            <div class="skill">PHP</div>
+
+            <div class="skill">MySQL</div>
+
+            <div class="skill">Python</div>
+
+        </div>
+
     </section>
 
     <section>
+
         <h2>Projects</h2>
 
-        <ol>
-            <li>Internal Mark Management System</li>
-            <li>Migrated Workers Portal</li>
-        </ol>
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>Internal Mark Management System</h3>
+
+                <p>
+                    A web-based application for managing student
+                    internal marks, attendance, and academic reports.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Migrated Workers Portal</h3>
+
+                <p>
+                    A portal developed to support migrant workers
+                    by providing information and essential services.
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
     <section>
+
         <h2>Contact</h2>
 
-        <form>
-            <label>Name:</label><br>
-            <input type="text"><br><br>
+        <div class="contact">
 
-            <label>Email:</label><br>
-            <input type="email"><br><br>
+            <p>Email: rynureji2004@gmail.com</p>
 
-            <input type="submit" value="Send Message">
-        </form>
+              <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/rynu-reji-459470320" target="_blank">
+                linkedin.com/in/rynu-reji-459470320
+            </a>
+        </p>
+
+            <p>Location: Kerala, India</p>
+
+        </div>
+
     </section>
 
-    <footer>
-        <p>&copy; 2026 Rynu Reji Portfolio</p>
-    </footer>
+</div>
+
+<footer>
+
+    <p>&copy; 2026 Rynu Reji Portfolio</p>
+
+</footer>
 
 </body>
 </html>
