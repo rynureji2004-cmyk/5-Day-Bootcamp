@@ -108,7 +108,9 @@ section {
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
 }
+
 
 /* SKILLS */
 .skills-list li {
@@ -163,8 +165,21 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 350px;
+  margin: auto;
 }
 
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
 input, textarea {
   padding: 10px;
   border: 1px solid #ccc;
@@ -312,9 +327,10 @@ button {
 
       <button type="submit">Send Message</button>
     </form>
-
+  <br>
     <div class="social">
-      <p>Connect with me:</p>
+      <p>Connect with me:</p><br><br>
+
       <a href="#">LinkedIn</a>
       <a href="#">GitHub</a>
       <a href="#">Instagram</a>
